@@ -2,6 +2,8 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
+import SendIcon from "@material-ui/icons/Send";
+import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 
 export default function Create() {
   return (
@@ -19,18 +21,10 @@ export default function Create() {
         type="submit"
         color="secondary"
         variant="contained"
+        endIcon={<KeyboardArrowRightIcon />}
       >
         Submit
       </Button>
-      {/* <Button type="submit">Submit</Button>
-      <Button type="submit" color="secondary" variant="outlined">
-        Submit
-      </Button>
-      <ButtonGroup color="secondary" variant="contained">
-        <Button>One</Button>
-        <Button>two</Button>
-        <Button>three</Button>
-      </ButtonGroup> */}
     </Container>
   );
 }
